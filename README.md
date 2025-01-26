@@ -13,7 +13,9 @@ Bu proje, kullanıcının eğlenceli bir şekilde soruları yanıtlayabileceği 
 -Soruların Medya Dosyaları ile Birlikte Gösterimi: Sorular, metin ve görsellerle birlikte kullanıcıya sunulur.
 
 -Cevapların Doğruluğunun Anında Kontrolü: Kullanıcı, şıkları tıkladığında doğru ve yanlış cevaplar anında kontrol edilir.
+
 -Test Sonunda Detaylı Sonuçlar: Test sonunda, her soruya verilen doğru, yanlış ve boş yanıtlar gösterilir.
+
 -Kullanıcı Dostu ve Responsive Tasarım: 1400px genişliğinde optimize edilmiş tasarım, tüm ekran boyutlarında rahat bir kullanım sunar.
 
 ### Kullanılan Teknolojiler
