@@ -27,5 +27,5 @@ Bu proje, kullanıcının eğlenceli bir şekilde soruları yanıtlayabileceği 
 
 ### Canlı Link
 
-[(https://questionquizapp.netlify.app/)](https://questionquizapp.netlify.app/)
+[https://questionquizapp.netlify.app/](https://questionquizapp.netlify.app/)
 
