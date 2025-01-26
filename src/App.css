@@ -1,0 +1,204 @@
+/* Genel stil ayarları */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #1c1c1c, #4e4e4e); /* Koyu gradient */
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* App container */
+.App {
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+/* Başlıklar */
+h1 {
+    color: #ff6f61;
+    font-size: 2.2rem;
+    font-family: 'Pacifico', cursive;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #4caf50;
+}
+
+h3, h5, p {
+    color: #333;
+    font-size: 1rem;
+}
+
+/* Timer */
+.timer {
+    font-size: 1.2rem;
+    color: #ffb74d;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Başlangıç ekranı */
+.start-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.start-screen button {
+    padding: 12px 20px;
+    background: linear-gradient(to right, #ff5722, #ff9800);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.start-screen button:hover {
+    background: linear-gradient(to right, #e64a19, #f57c00);
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+/* Soru ekranı */
+.question-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 15px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.options {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.option-button {
+    padding: 12px;
+    font-size: 1rem;
+    color: white;
+    background: #4caf50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.option-button:hover {
+    background: #388e3c;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Seçilen cevap */
+.selected-answer {
+    color: #f44336;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* Sonraki buton */
+.next-button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    background: #2196f3;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.next-button:hover {
+    background: #1976d2;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sonuç ekranı */
+.result-screen {
+    margin-top: 20px;
+}
+
+.result-screen button {
+    background: #009688;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.result-screen button:hover {
+    background: #00796b;
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Cevap listesi */
+.answers-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.answer-item {
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid #ddd;
+    background: #f9f9f9;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.answer-item.correct {
+    border-color: #4caf50;
+    background: rgba(76, 175, 80, 0.2);
+}
+
+.answer-item.incorrect {
+    border-color: #f44336;
+    background: rgba(244, 67, 54, 0.2);
+}
+
+.answer-item p {
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+.answers-list strong {
+    font-weight: bold;
+    color: #333;
+}
